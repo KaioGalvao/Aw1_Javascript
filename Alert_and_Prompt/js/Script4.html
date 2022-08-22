@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script 4</title>
+    <style>
+        *{
+            font-family: 'Arial', sans-serif;
+            background-color:mediumvioletred;
+        }
+
+    </style>
+</head>
+
+<body>
+    <script>
+
+        var numeros = [];
+        
+        for (let i = 0; i < 3 ; i++) {
+            numeros.push(prompt("Entre com um número: "));
+        }
+        
+        insertionSort(numeros);
+
+        alert("menor:" + numeros[0] + " maior:" +numeros[2]);
+
+        function insertionSort(array) {
+            for (let i = 1; i < array.length; i++) {
+                let valorAtual = array[i];
+                let j;
+                for (j = i - 1; j >= 0 && array[j] > valorAtual; j--) {
+                    array[j + 1] = array[j];
+                }
+                array[j + 1] = valorAtual;
+            }
+            return array;
+        }
+
+    </script>
+</body>
+
+</html>
