@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 70px;
+    margin: auto;
+}
+
+h1{
+    position: absolute;
+    transform: translateY(-350px);
+}
+
+.note1{
+    position: absolute;
+    width: 420px;
+    height: 460px;
+    background-color: #fdec6f;
+    margin-bottom: -52px;
+    margin-left: 31px;
+    border: 2px black solid;
+    transform: rotate(-1deg);
+
+}
+
+.note3{
+    position: absolute;
+    width: 420px;
+    height: 460px;
+    background-color: #68b2f8;
+    margin-bottom: -22px;
+    margin-left: 53px;
+    border: 2px black solid;
+    transform: rotate(-2deg);
+
+}
+
+.note2{
+    position: absolute;
+    width: 420px;
+    height: 460px;
+    background-color: #fff;
+    transform: rotate(1deg);
+    margin-bottom: -30px;
+    margin-left: 17px;
+    border: 2px black solid;
+}
+.note{
+    position: absolute;
+    width: 420px;
+    height: 460px;
+    display: flex;
+    background-color: #a7ebc9;
+    flex-direction: column;
+    padding: 24px;
+    border: 2px black solid;
+}   
+
+.adesivo{
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 100px;
+    background-color: #c1858f;
+    width: 167px;
+    height: 43px;
+    transform: rotate(3deg);
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border: 2px black solid;
+}
+
+.form{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    border-radius: 7px;
+    height: 30px;
+    border: 2px black solid;
+    padding: 0 12px;
+    
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+.dados{
+    border-radius: 0;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 3px dashed black;
+}
+
+#button{
+    background-color: #c1858f;
+    width: 167px;
+    height: 43px;
+    margin-left: 100px;
+    transition: .4s ease;
+    transform: translateY(-40px);
+}
+
+#button:hover{
+    opacity: .7;
+}
+
+#resultado{
+    position: absolute;
+    transform: translateY(350px);    
+    font-size: 32px;
+}

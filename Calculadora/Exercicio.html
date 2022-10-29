@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios</title>
+</head>
+<body style="text-align: center;">
+    <script>
+        
+        document.write('<h2>Exercício 1</h2>');
+
+        let numero = prompt("Digite um número:");
+        numero = parseFloat(numero);
+        
+        for (let i = 1; i < 101; i++)
+        {   
+            document.write(numero + ' x ' + i + ' = ' + (numero*i) + '<br>');
+            (numero*i)%10 == 0 ? document.write('<hr>') : '';
+        }
+
+        document.write('<h2>Exercício 2</h2>');
+
+        for (let j = 2000; j<=2022; j++)
+        {   
+            (j%2 == 0) ? document.write('Ano par: ' + j + '<br>') : document.write('Ano impar: ' + j + '<br>');
+        }
+
+        document.write('<h2>Exercício 3</h2>');
+
+        for (let k = 1004; k<=2022; k++)
+        {   
+            ((k%4 == 0) && k%100 != 0)? document.write('Ano Bissexto: ' + k + '<br>') : '';
+        }
+
+    </script>        
+</body>
+</html>
